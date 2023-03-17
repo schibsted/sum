@@ -15,9 +15,7 @@ on:
 jobs:
   test:
     name: Tests
-    env:
-      ARTIFACTORY_USER: ${{ secrets.ARTIFACTORY_USER }}
-      ARTIFACTORY_NPM_SECRET: ${{ secrets.ARTIFACTORY_NPM_SECRET }}
+    runs-on: ubuntu-latest
     permissions:
       actions: read
       contents: read
