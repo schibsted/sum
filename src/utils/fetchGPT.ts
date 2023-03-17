@@ -1,4 +1,5 @@
 import { prompts } from '~/constants';
+import { chatCompletionSchema } from '~/types';
 
 export const fetchGPT = async (promptKey: string, userContent: string) => {
   const prompt = prompts.find((p) => p.key === promptKey);
@@ -13,5 +14,8 @@ export const fetchGPT = async (promptKey: string, userContent: string) => {
     method: 'POST',
   });
   const data = await res.json();
-  return data;
+
+  const validatedData = chatCompletionSchema.parse(data);
+
+  return validatedData;
 };

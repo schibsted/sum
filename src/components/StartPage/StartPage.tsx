@@ -4,27 +4,12 @@ import { Entry } from '~/types';
 import { fetchGPT } from '~/utils/fetchGPT';
 import { prompts } from '~/constants';
 import IntroCard from '../IntroCard';
+import { transcribe } from '~/utils/transcribe';
 
 interface Props {
   setCurrentPage: (currentPage: 'ResultPage' | 'StartPage') => void;
   setEntries: (arg: Array<Entry>) => void;
 }
-
-const transcribe = async (file: File, prompt?: string) => {
-  let APIUrl = '/api/whisper';
-
-  if (prompt) {
-    APIUrl += `?prompt=${encodeURIComponent(prompt)}`;
-  }
-
-  const res = await fetch(APIUrl, {
-    method: 'POST',
-    body: file,
-  });
-  if (!res.ok) throw new Error('Something went wrong!');
-  const data = await res.json();
-  return data;
-};
 
 const StartPage: FC<Props> = ({ setCurrentPage, setEntries }) => {
   const [file, setFile] = useState<File | null>(null);
