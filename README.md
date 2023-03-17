@@ -1,12 +1,15 @@
 # Sum
 
+<div align="center">
+
 Sum, the tool for understanding, assisting and making your articles reach the moon using OpenAI's GPT-3 API.
 
-This was developed in collaboration with [NRK](https://www.nrk.no/) and [VG](https://www.vg.no/) as part of a innovation day.
+This was developed in collaboration with [NRK](https://www.nrk.no/) and [VG](https://www.vg.no/) as part of an innovation day.
 
-<div align="center">
-![image of the start page](.github/imgs/start.png?raw=true "start")
-![image of the output page](.github/imgs/out.png?raw=true "out")
+|                         Start page                          |                        Result Page                         |
+| :---------------------------------------------------------: | :--------------------------------------------------------: |
+| ![image of the start page](.github/imgs/start.png?raw=true) | ![image of the output page](.github/imgs/out.png?raw=true) |
+
 </div>
 
 ## Getting Started
