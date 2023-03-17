@@ -2,7 +2,7 @@
 
 <div align="center">
 
-Sum, the tool for understanding, assisting and making your articles reach the moon using OpenAI's GPT-3 API.
+Sum, the tool for understanding, assisting and helping your articles reach the moon (by using ChatGPT)
 
 This was developed in collaboration with [NRK](https://www.nrk.no/) and [VG](https://www.vg.no/) as part of an innovation day.
 
