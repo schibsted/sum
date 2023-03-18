@@ -2,11 +2,11 @@
 
 <div align="center">
 
-Sum, the tool for understanding, assisting and helping your articles reach the moon (by using ChatGPT)
+Sum, a powerful tool for enhancing your articles with the help of ChatGPT.
 
-This was developed in collaboration with [NRK](https://www.nrk.no/) and [VG](https://www.vg.no/) as part of an innovation day.
+Developed in collaboration with [NRK](https://www.nrk.no/) and [VG](https://www.vg.no/) during an innovation day event.
 
-|                         Start page                          |                        Result Page                         |
+|                         Start Page                          |                        Result Page                         |
 | :---------------------------------------------------------: | :--------------------------------------------------------: |
 | ![image of the start page](.github/imgs/start.png?raw=true) | ![image of the output page](.github/imgs/out.png?raw=true) |
 
@@ -14,36 +14,36 @@ This was developed in collaboration with [NRK](https://www.nrk.no/) and [VG](htt
 
 ## Getting Started
 
-First, you need to install the dependencies:
+First, install the dependencies:
 
 ```bash
 npm install
 ```
 
-You then need to configure the environment variables. See the section below for more information.
+Next, configure the environment variables. Refer to the section below for details.
 
-After configuring environment variables, you can run the development server:
+After setting up the environment variables, run the development server:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser to see the result.
 
 ## Environment Variables
 
-You will need to create a `.env` file in the root of the project and add the following environment variables:
+Create a `.env` file in the root of the project and add the following environment variables:
 
 ```bash
-OPENAI_API_KEY="" # Get this from OpenAI
-OPENAI_GPT_MODEL="" # This is the model you want to use. (If not specified, it will use the gpt-3.5-turbo model)
+OPENAI_API_KEY="" # Obtain this from OpenAI
+OPENAI_GPT_MODEL="" # Specify the model to use (if not provided, the gpt-3.5-turbo model will be used by default)
 ```
 
 ## Contributing
 
-Contributions are welcome! Just create a pull request with your changes 🚀
+Contributions are welcome! Jusy submit a pull request with your changes 🚀
 
-If you want to contribute, but don't know how to code, please create an issue with your idea and we'll see what we can do.
+If you want to contribute, but don't know how to code, please create an issue with your idea, and we'll see what we can do.
 
 ## Technologies used
 
@@ -51,9 +51,9 @@ If you want to contribute, but don't know how to code, please create an issue wi
 - [Tailwind CSS](https://tailwindcss.com/)
 - [OpenAI](https://openai.com/)
 
-## Thanks to
+## Acknowledgments
 
 - Ørjan Hafnor for the design
 - Johannes Andersen for the initial code
-- Danielle Chiosso Liu for being our prompt engineer and investigating ChatGPT performance
-- [NRK](https://www.nrk.no/) and [VG](https://www.vg.no/) for the cross media collaboration
+- Danielle Chiosso Liu for prompt engineering and investigating ChatGPT performance
+- [NRK](https://www.nrk.no/) and [VG](https://www.vg.no/) for fostering cross-media collaboration
