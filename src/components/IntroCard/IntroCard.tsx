@@ -144,7 +144,7 @@ const IntroCard: FC<Props> = ({
         <p className="mt-8 text-center text-sm text-gray-500">
           Sum bruker OpenAIs tjenestene ChatGPT og Whisper, se deres{' '}
           <Link
-            href="https://platform.openai.com/docs/data-usage-policies"
+            href="https://openai.com/policies/api-data-usage-policies"
             target="_blank"
             className="text-indigo-600 hover:text-indigo-500"
           >
