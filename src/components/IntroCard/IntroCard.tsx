@@ -1,5 +1,4 @@
 'use client';
-import Link from 'next/link';
 import { ChangeEvent, FC, useEffect, useState } from 'react';
 import { prompts } from '~/constants';
 
@@ -35,8 +34,8 @@ const IntroCard: FC<Props> = ({
   }, [file, text]);
 
   return (
-    <section className="flex justify-center bg-blue-50 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
-      <div className="flex w-full max-w-6xl flex-col rounded-lg bg-white px-16 pt-16 pb-4 shadow-lg">
+    <section className="flex justify-center bg-blue-50 pb-20 pt-16 lg:px-8 lg:pb-28 lg:pt-24">
+      <div className="flex w-full max-w-6xl flex-col rounded-lg bg-white px-16 pb-4 pt-16 shadow-lg">
         <div className="max-w-md">
           <span className="text-sm font-bold text-indigo-600">
             AI gjort enkelt
@@ -130,7 +129,7 @@ const IntroCard: FC<Props> = ({
                 disabled={disabled || loading}
                 onClick={() => !disabled && handleSubmit()}
                 type="button"
-                className={`rounded-md bg-indigo-600 py-2 px-8 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 ${
+                className={`rounded-md bg-indigo-600 px-8 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 ${
                   disabled
                     ? 'cursor-not-allowed opacity-50'
                     : 'hover:bg-indigo-500'
@@ -143,13 +142,13 @@ const IntroCard: FC<Props> = ({
         </div>
         <p className="mt-8 text-center text-sm text-gray-500">
           Sum bruker OpenAIs tjenestene ChatGPT og Whisper, se deres{' '}
-          <Link
+          <a
             href="https://openai.com/policies/api-data-usage-policies"
             target="_blank"
             className="text-indigo-600 hover:text-indigo-500"
           >
             personvernerklæring her.
-          </Link>
+          </a>
         </p>
       </div>
     </section>
