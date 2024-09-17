@@ -37,7 +37,7 @@
     "@types/tmp": "0.2.3",
     "autoprefixer": "10.4.14",
     "eslint": "8.37.0",
-    "eslint-config-next": "13.3.0",
+    "eslint-config-next": "13.5.7",
     "postcss": "8.4.21",
     "prettier": "2.8.7",
     "prettier-plugin-tailwindcss": "0.2.7",
