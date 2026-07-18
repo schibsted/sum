@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@tailwindcss/forms": "0.5.3",
-    "@types/ffmpeg": "1.0.4",
+    "@types/ffmpeg": "1.0.7",
     "@types/lodash": "4.14.192",
     "@types/node": "18.15.11",
     "@types/react": "18.0.33",
